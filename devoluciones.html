@@ -7,6 +7,85 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Devoluciones</h1>
+    <div class="contenedor">
+            <!-- Menú lateral -->
+        <aside class="sidebar">
+            <a href="inicio.html">
+                <img src="imagenes/casa-removebg-preview.png" alt="">
+            </a>
+            <a href="gestiondelibros.html">
+                <img src="imagenes/libro-removebg-preview.png" alt="">
+            </a>
+            <a href="gestiondeusuarios.html">
+                <img src="imagenes/personas-removebg-preview.png" alt="">
+            </a>
+            <a href="prestamolibros.html">
+                <img src="imagenes/prestamo-removebg-preview.png" alt="">
+            </a>
+                <a href="devoluciones.html">
+                <img src="imagenes/devolucion-removebg-preview.png" alt="">
+            </a>
+
+             <a href="reportes.html">
+                <img src="imagenes/reporte-removebg-preview.png" alt="">
+            </a>
+            
+            <a href="estraviado.html">
+                <img src="imagenes/libro-removebg-preview.png" alt="">
+            </a>
+        </aside>
+
+        <!-- Contenido -->
+    <main class="contenido">
+        <h2>6. Devoluciones de libros</h2>
+
+        <div class="card">
+            <h3>Registrar Devolución</h3>
+
+            <label>Buscar préstamo</label>
+            <div class="buscar">
+                <input type="text" placeholder="Ingrese ID del préstamo...">
+                <button>🔍</button>
+            </div>
+
+            <div class="info-grid">
+
+                <div class="info">
+                    <h4>Información del préstamo</h4>
+                    <p><strong>Usuario:</strong> Juan Pérez</p>
+                    <p><strong>Libro:</strong> La Odisea</p>
+                    <p><strong>Fecha préstamo:</strong> 24/05/2024</p>
+                    <p><strong>Fecha devolución:</strong> 31/05/2024</p>
+                </div>
+
+                <div class="estado">
+                    <h4>Estado del libro</h4>
+
+                    <label>
+                        <input type="radio" name="estado" checked>
+                        Devuelto en buen estado
+                    </label>
+
+                    <label>
+                        <input type="radio" name="estado">
+                        Libro extraviado o dañado
+                    </label>
+
+                    <label>Fecha de devolución</label>
+                    <input type="date">
+                </div>
+
+                </div>
+
+                    <button class="btn">
+                        Registrar devolución
+                    </button>
+
+                </div>
+            </div>
+
+        </main>
+
+    </div>
 </body>
 </html>

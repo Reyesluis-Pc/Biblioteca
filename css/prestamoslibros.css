@@ -1,0 +1,240 @@
+/* MENU */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(212, 211, 211);
+}
+
+.sidebar{
+    width: 100px;
+    background: #36B73A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.sidebar img{
+    width: 75px;
+    height: 75px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.configuracion{
+    margin-top: auto;
+}
+
+.libros{
+    flex: 1;
+    min-height: 100vh;
+    background-color: rgb(212, 211, 211);
+    padding: 30px;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.prestamo{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.prestamo h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* BUSCADORES */
+
+.campo-busqueda{
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.campo-busqueda input{
+    flex: 1;
+    height: 65px;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 12px 0 0 12px;
+    font-size: 18px;
+}
+
+.btn-buscar{
+    width: 70px;
+    height: 65px;
+    border: none;
+    background: #36B73A;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-buscar img{
+    width: 28px;
+    height: 28px;
+}
+
+/* FECHAS */
+
+.fila{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.campo{
+    flex: 1;
+}
+
+.campo input{
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+/* BOTÓN */
+
+.prestamo button[type="submit"]{
+    display: block;
+    margin: auto;
+    width: 320px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #36B73A;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* para tablet */
+
+@media (max-width: 1024px){
+
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .sidebar img{
+        width: 55px;
+        height: 55px;
+        margin: 8px;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    h2{
+        font-size: 1.7rem;
+    }
+
+    .campo-busqueda input{
+        height: 60px;
+    }
+
+    .btn-buscar{
+        width: 65px;
+        height: 60px;
+    }
+}
+
+/* para celular */
+
+@media (max-width: 768px){
+
+    .libros{
+        padding: 15px;
+    }
+
+    .sidebar{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .sidebar img{
+        width: 35px;
+        height: 3 5px;
+        margin: 5px;
+    }
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    h2{
+        font-size: 1.3rem;
+    }
+
+    .prestamo h3{
+        font-size: 1.1rem;
+    }
+
+    .campo-busqueda input{
+        height: 50px;
+        font-size: 14px;
+        padding: 0 12px;
+    }
+
+    .btn-buscar{
+        width: 55px;
+        height: 50px;
+    }
+
+    .btn-buscar img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .fila{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .campo input{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .prestamo button[type="submit"]{
+        width: 100%;
+        max-width: 280px;
+        font-size: 18px;
+    }
+}
