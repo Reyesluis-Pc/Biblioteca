@@ -1,12 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <link rel="stylesheet" href="css/prestamoslibros.css">
-    <title>Document</title>
+    <title>Préstamos de Libros</title>
 </head>
 <body>
-    <h1>Prestamos de libros</h1>
+
+<div class="contenedor">
+
+    <!-- Menú -->
+    <aside class="sidebar">
+
+        <a href="inicio.html">
+            <img src="imagenes/casa-removebg-preview.png" alt="Inicio">
+        </a>
+
+        <a href="gestiondelibros.html">
+            <img src="imagenes/libro-removebg-preview.png" alt="Libros">
+        </a>
+
+        <a href="gestiondeusuarios.html">
+            <img src="imagenes/personas-removebg-preview.png" alt="Usuarios">
+        </a>
+
+        <a href="prestamolibros.html">
+            <img src="imagenes/prestamo-removebg-preview.png" alt="Préstamos">
+        </a>
+
+        <a href="devoluciones.html">
+            <img src="imagenes/devolucion-removebg-preview.png" alt="Devoluciones">
+        </a>
+
+        <a href="reportes.html">
+            <img src="imagenes/reporte-removebg-preview.png" alt="Reportes">
+        </a>
+
+        <a href="estraviado.html">
+            <img src="imagenes/libro-removebg-preview.png" alt="Extraviados">
+        </a>
+
+
+    </aside>
+
+    <!-- Contenido -->
+    <div class="libros">
+
+        <h1>Préstamos de Libros</h1>
+        <h2>Nuevo Préstamo de Libro</h2>
+
+        <div class="prestamo">
+
+            <!-- Buscar usuario -->
+            <h3>Buscar usuario</h3>
+
+            <div class="campo-busqueda">
+                <input type="text" placeholder="Ingrese nombre o ID del usuario...">
+
+                <button class="btn-buscar">
+                    <img src="imagenes/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="Buscar">
+                </button>
+            </div>
+
+            <!-- Buscar libro -->
+            <h3>Buscar libro</h3>
+
+            <div class="campo-busqueda">
+                <input type="text" placeholder="Ingrese título o código del libro...">
+
+                <button class="btn-buscar">
+                    <img src="imagenes/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="Buscar">
+                </button>
+            </div>
+
+            <!-- Fechas -->
+            <div class="fila">
+
+                <div class="campo">
+                    <h3>Fecha de préstamo</h3>
+                    <input type="date">
+                </div>
+
+                <div class="campo">
+                    <h3>Fecha de devolución</h3>
+                    <input type="date">
+                </div>
+
+            </div>
+
+            <!-- Botón -->
+            <button type="submit">
+                Registrar préstamo
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>
