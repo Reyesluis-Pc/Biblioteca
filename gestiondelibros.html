@@ -3,10 +3,429 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Icono lupa -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+     <!-- Icono lápiz -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+     <!-- Basurero -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="css/gestiondelibros.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Gestion de Libros</h1>
+
+<div class="contenedor-gestion">
+
+    <!-- Menú lateral -->
+    <aside class="sidebar">
+      <a href="inicio.html">
+          <img src="imagenes/casa-removebg-preview.png" alt="">
+      </a>
+      <a href="gestiondelibros.html">
+          <img src="imagenes/libro-removebg-preview.png" alt="">
+      </a>
+      <a href="gestiondeusuarios.html">
+          <img src="imagenes/personas-removebg-preview.png" alt="">
+      </a>
+      <a href="prestamolibros.html">
+          <img src="imagenes/prestamo-removebg-preview.png" alt="">
+      </a>
+      <a href="devoluciones.html">
+          <img src="imagenes/devolucion-removebg-preview.png" alt="">
+      </a>
+      <a href="estraviado.html"></a>
+          <img src="imagenes/reporte-removebg-preview.png" alt="">
+      </a>
+      <a href="reportes.html">
+          <img src="imagenes/libro-de-hechizos.png" alt="">
+      </a>
+
+    </aside>
+
+    <main class="contenido">
+
+    <div class="encabezado">
+        <h2>Gestión de Libros</h2>
+
+        <button class="btn-agregar">
+            +Agregar libro
+        </button>
+    </div>
+    <br>
+    <hr>
+       <div class="buscador">
+            <input type="text" placeholder="Buscar usuario...">
+            <button><span class="material-symbols-outlined">search</span></button>
+
+        </div>
+        <br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Categoría</th>
+                <th>Existencias</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>L001</td>
+                <td>La Odisea</td>
+                <td>Homero</td>
+                <td>Literatura</td>
+                <td>4</td>
+
+                <td class="acciones">
+                      <button class="editar">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+
+                        <button class="eliminar">
+                           <span class="material-symbols-outlined">delete</span>
+                        </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>L002</td>
+                <td>Cien años de Soledad</td>
+                <td>Gabriel García Márquez</td>
+                <td>Novela</td>
+                <td>2</td>
+
+                <td class="acciones">
+                       <button class="editar">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+
+                        <button class="eliminar">
+                           <span class="material-symbols-outlined">delete</span>
+                        </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>L003</td>
+                <td>El Principito</td>
+                <td>Antoine de Saint-Exupéry</td>
+                <td>Infantil</td>
+                <td>6</td>
+
+                <td class="acciones">
+                      <button class="editar">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+
+                        <button class="eliminar">
+                           <span class="material-symbols-outlined">delete</span>
+                        </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>L004</td>
+                <td>Historia de México</td>
+                <td>Varios Autores</td>
+                <td>Historia</td>
+                <td>3</td>
+
+                <td class="acciones">
+                       <button class="editar">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+
+                        <button class="eliminar">
+                           <span class="material-symbols-outlined">delete</span>
+                        </button>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>L005</td>
+                <td>Matemáticas Básicas</td>
+                <td>Varios Autores</td>
+                <td>Educación</td>
+                <td>5</td>
+
+                <td class="acciones">
+                       <button class="editar">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+
+                        <button class="eliminar">
+                           <span class="material-symbols-outlined">delete</span>
+                        </button>
+                </td>
+            </tr>
+
+            <tr>
+                 <td>L006</td>
+                 <td>Don Quijote de la Mancha</td>
+                 <td>Miguel de Cervantes</td>
+                 <td>Literatura</td>
+                 <td>7</td>
+
+                 <td class="acciones">
+                     <button class="editar">
+                        <span class="material-symbols-outlined">edit</span></button>
+                     <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+                </td>
+            </tr>
+
+             <tr>
+                 <td>L007</td>
+                 <td>Romeo y Julieta</td>
+                 <td>William Shakespeare</td>
+                 <td>Drama</td>
+                 <td>5</td>
+
+                <td class="acciones">
+                     <button class="editar">
+                        <span class="material-symbols-outlined">edit</span></button>
+                      <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+                </td>
+            </tr>
+
+            <tr>
+                 <td>L008</td>
+                 <td>El Hobbit</td>
+                 <td>J.R.R. Tolkien</td>
+                 <td>Fantasía</td>
+                 <td>8</td>
+                 
+                 <td class="acciones">
+                     <button class="editar">
+                        <span class="material-symbols-outlined">edit</span></button>
+                     <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+                 </td>
+            </tr>
+
+            <tr>
+                 <td>L009</td>
+                 <td>1984</td>
+                 <td>George Orwell</td>
+                 <td>Ciencia Ficción</td>
+                 <td>6</td>
+    
+                 <td class="acciones">
+                     <button class="editar">
+                        <span class="material-symbols-outlined">edit</span></button>
+                     <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+                 </td>
+            </tr>
+
+            <tr>
+                 <td>L010</td>
+                 <td>Fahrenheit 451</td>
+                 <td>Ray Bradbury</td>
+                 <td>Ciencia Ficción</td>
+                 <td>4</td>
+                
+                 <td class="acciones">
+                     <button class="editar">
+                        <span class="material-symbols-outlined">edit</span></button>
+                     <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+                 </td>
+            </tr>
+
+            <tr>
+                 <td>L011</td>
+                 <td>La Divina Comedia</td>
+                 <td>Dante Alighieri</td>
+                 <td>Poesía</td>
+                 <td>5</td>
+                 
+                 <td class="acciones">
+                     <button class="editar">
+                        <span class="material-symbols-outlined">edit</span></button>
+                     <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+                 </td>
+            </tr>
+
+            <tr>
+                 <td>L012</td>
+                 <td>Orgullo y Prejuicio</td>
+                 <td>Jane Austen</td>
+                 <td>Novela</td>
+                 <td>3</td>
+                
+                 <td class="acciones">
+                     <button class="editar">
+                        <span class="material-symbols-outlined">edit</span></button>
+                     <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+                 </td>
+            </tr>
+
+<tr>
+    <td>L013</td>
+    <td>Moby Dick</td>
+    <td>Herman Melville</td>
+    <td>Aventura</td>
+    <td>6</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>L014</td>
+    <td>El Alquimista</td>
+    <td>Paulo Coelho</td>
+    <td>Novela</td>
+    <td>5</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>L015</td>
+    <td>Crónica de una muerte anunciada</td>
+    <td>Gabriel García Márquez</td>
+    <td>Novela</td>
+    <td>4</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>L016</td>
+    <td>Harry Potter y la piedra filosofal</td>
+    <td>J.K. Rowling</td>
+    <td>Fantasía</td>
+    <td>10</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>L017</td>
+    <td>Las Aventuras de Tom Sawyer</td>
+    <td>Mark Twain</td>
+    <td>Aventura</td>
+    <td>6</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>L018</td>
+    <td>El Retrato de Dorian Gray</td>
+    <td>Oscar Wilde</td>
+    <td>Novela</td>
+    <td>5</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>L019</td>
+    <td>Drácula</td>
+    <td>Bram Stoker</td>
+    <td>Terror</td>
+    <td>4</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>L020</td>
+    <td>Frankenstein</td>
+    <td>Mary Shelley</td>
+    <td>Terror</td>
+    <td>7</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>L021</td>
+    <td>La Iliada</td>
+    <td>Homero</td>
+    <td>Literatura</td>
+    <td>5</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>L022</td>
+    <td>El Código Da Vinci</td>
+    <td>Dan Brown</td>
+    <td>Misterio</td>
+    <td>9</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>L023</td>
+    <td>Los Miserables</td>
+    <td>Victor Hugo</td>
+    <td>Novela</td>
+    <td>4</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>L024</td>
+    <td>El Viejo y el Mar</td>
+    <td>Ernest Hemingway</td>
+    <td>Novela</td>
+    <td>6</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>L025</td>
+    <td>Alicia en el País de las Maravillas</td>
+    <td>Lewis Carroll</td>
+    <td>Infantil</td>
+    <td>8</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+
+
+        </tbody>
+    </table>
+  </main>
+
+</div>
+
 </body>
 </html>

@@ -1,0 +1,255 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.contenedor-gestion{
+    width:100%;
+    background:#ececec;
+}
+
+/* MENU */
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    background: linear-gradient(#5d30d8,#6f2bee);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.sidebar img{
+    width: 70px;
+    height: 10vh;
+    font-size:35px;
+    margin:15px;
+    cursor:pointer;
+}
+
+/* CONTENIDO */
+
+.contenido{
+    flex:1;
+    padding:20px;
+    margin-left: 100px;
+}
+
+.encabezado{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.btn-agregar{
+    background:#4f6bed;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.btn-agregar:hover{
+    background:#3957df;
+    transform: scale(1.01);
+    box-shadow: 0 15px 15px gray;
+}
+
+.buscador{
+    margin:20px 0;
+    display:flex;
+    width:300px;
+}
+
+.buscador input{
+    flex:1;
+    padding:10px;
+    border:1px solid #bbb;
+    border-right:none;
+    border-radius:8px 0 0 8px;
+}
+
+.buscador button{
+    width:50px;
+    border:1px solid #bbb;
+    background:white;
+    border-radius:0 8px 8px 0;
+    cursor:pointer;
+}
+
+/* TABLA */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+thead{
+    background:#d4d4d4;
+}
+
+th, td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #999;
+}
+
+.editar{
+    background:#543cdd;
+    color:white;
+    border:none;
+    width:45px;
+    height:40px;
+    border-radius:5px;
+}
+
+.eliminar{
+    background:#ef4040;
+    color:white;
+    border:none;
+    width:45px;
+    height:40px;
+    border-radius:5px;
+}
+
+/* Media de ¡Pad */
+@media(max-width:1024px){
+
+    .sidebar{
+        width:100%;
+        height:70px;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        overflow-x: auto;
+    }
+
+    .sidebar img{
+        width:50px;
+        height:50px;
+        margin:8px;
+    }
+
+    .contenido{
+        margin-left:0;
+        margin-top:70px;
+        padding:10px;
+    }
+
+    .encabezado{
+        flex-direction:column;
+        align-items:stretch;
+        gap:10px;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+
+    .btn-agregar{
+        width:100%;
+    }
+
+    .buscador{
+        width:100%;
+    }
+
+    .buscador input{
+        width:100%;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+
+    th, td{
+        font-size:12px;
+        padding:8px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .editar,
+    .eliminar{
+        width:35px;
+        height:35px;
+    }
+
+}
+
+/* Media para celular */
+@media (max-width:480px){
+
+    .sidebar{
+        width:100%;
+        height:70px;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        overflow-x: auto;
+    }
+
+    .sidebar img{
+        width:40px;
+        height:40px;
+        margin:8px;
+    }
+
+    .contenido{
+        margin-left:0;
+        margin-top:70px;
+        padding:10px;
+    }
+
+    .encabezado{
+        flex-direction:column;
+        align-items:stretch;
+        gap:10px;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+
+    .btn-agregar{
+        width:100%;
+    }
+
+    .buscador{
+        width:100%;
+    }
+
+    .buscador input{
+        width:100%;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+
+    th, td{
+        font-size:12px;
+        padding:8px;
+    }
+
+    .editar,
+    .eliminar{
+        width:35px;
+        height:35px;
+    }
+
+}

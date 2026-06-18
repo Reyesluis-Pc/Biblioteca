@@ -3,10 +3,469 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icono lupa -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+     <!-- Icono lápiz -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+      <!-- Basurero -->
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="css/gestiondeusuarios.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Gestión de usuarios</h1>
+
+<div class="contenedor-usuarios">
+
+    <!-- Menú lateral -->
+    <aside class="sidebar">
+      <a href="inicio.html">
+          <img src="imagenes/casa-removebg-preview.png" alt="">
+      </a>
+      <a href="gestiondelibros.html">
+          <img src="imagenes/libro-removebg-preview.png" alt="">
+      </a>
+      <a href="gestiondeusuarios.html">
+          <img src="imagenes/personas-removebg-preview.png" alt="">
+      </a>
+      <a href="prestamolibros.html">
+          <img src="imagenes/prestamo-removebg-preview.png" alt="">
+      </a>
+      <a href="devoluciones.html">
+          <img src="imagenes/devolucion-removebg-preview.png" alt="">
+      </a>
+      <a href="estraviado.html"></a>
+          <img src="imagenes/reporte-removebg-preview.png" alt="">
+      </a>
+      <a href="reportes.html">
+          <img src="imagenes/libro-de-hechizos.png" alt="">
+      </a>
+
+    </aside>
+
+    <!-- Contenido -->
+    <main class="contenido">
+
+        <div class="encabezado">
+
+            <h1>Gestión de Usuarios</h1>
+
+            <button class="agregar">
+                +Agregar usuario
+            </button>
+
+        </div>
+        <br>
+        <hr>
+
+        <div class="buscar">
+
+            <input type="text" placeholder="Buscar usuario...">
+            <button><span class="material-symbols-outlined">search</span></button>
+
+        </div>
+        <br><br>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Grado/Área</th>
+                    <th>Correo</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>U001</td>
+                    <td>Juan Pérez</td>
+                    <td>Estudiante</td>
+                    <td>3ro A</td>
+                    <td>juan_perez@gmail.com</td>
+                    <td>Activo</td>
+                    <td class="acciones">
+                        <button class="editar">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+
+                        <button class="eliminar">
+                           <span class="material-symbols-outlined">delete</span>
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>U002</td>
+                    <td>María López</td>
+                    <td>Estudiante</td>
+                    <td>2do B</td>
+                    <td>maria_lop@gmail.com</td>
+                    <td>Activo</td>
+
+                    <td class="acciones">
+
+                         <button class="editar">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+
+                       <button class="eliminar">
+                           <span class="material-symbols-outlined">delete</span>
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                 <tr>
+
+                    <td>U003</td>
+                    <td>Carlos Cos</td>
+                    <td>Docente</td>
+                    <td>Matemáticas</td>
+                    <td>carlos_cos@gmail.com</td>
+                    <td>Activo</td>
+
+                    <td class="acciones">
+
+                         <button class="editar">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+
+                        <button class="eliminar">
+                           <span class="material-symbols-outlined">delete</span>
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                 <tr>
+
+                    <td>U004</td>
+                    <td>Ana Torres</td>
+                    <td>Docente</td>
+                    <td>Español</td>
+                    <td>ana_torres@gmail.com</td>
+                    <td>Activo</td>
+
+                    <td class="acciones">
+
+                         <button class="editar">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+
+                      <button class="eliminar">
+                           <span class="material-symbols-outlined">delete</span>
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>U005</td>
+                    <td>Luis Gómez</td>
+                    <td>Estudiante</td>
+                    <td>1ro A</td>
+                    <td>luisgom111@gmail.com</td>
+                    <td>Activo</td>
+
+                    <td class="acciones">
+
+                         <button class="editar">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+
+                       <button class="eliminar">
+                           <span class="material-symbols-outlined">delete</span>
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+    <td>U006</td>
+    <td>Sofía Martínez</td>
+    <td>Estudiante</td>
+    <td>4to A</td>
+    <td>sofia.martinez@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U007</td>
+    <td>Pedro Ramírez</td>
+    <td>Docente</td>
+    <td>Historia</td>
+    <td>pedro.ramirez@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U008</td>
+    <td>Laura Hernández</td>
+    <td>Estudiante</td>
+    <td>5to B</td>
+    <td>laura.hernandez@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U009</td>
+    <td>José Morales</td>
+    <td>Docente</td>
+    <td>Biología</td>
+    <td>jose.morales@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U010</td>
+    <td>Andrea Castillo</td>
+    <td>Estudiante</td>
+    <td>2do A</td>
+    <td>andrea.castillo@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U011</td>
+    <td>Miguel Rivera</td>
+    <td>Estudiante</td>
+    <td>3ro B</td>
+    <td>miguel.rivera@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U012</td>
+    <td>Daniela Cruz</td>
+    <td>Docente</td>
+    <td>Química</td>
+    <td>daniela.cruz@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U013</td>
+    <td>Fernando Díaz</td>
+    <td>Estudiante</td>
+    <td>1ro B</td>
+    <td>fernando.diaz@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U014</td>
+    <td>Patricia Reyes</td>
+    <td>Docente</td>
+    <td>Inglés</td>
+    <td>patricia.reyes@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U015</td>
+    <td>Kevin López</td>
+    <td>Estudiante</td>
+    <td>4to B</td>
+    <td>kevin.lopez@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U016</td>
+    <td>Gabriela Flores</td>
+    <td>Docente</td>
+    <td>Física</td>
+    <td>gabriela.flores@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U017</td>
+    <td>Ricardo Méndez</td>
+    <td>Estudiante</td>
+    <td>5to A</td>
+    <td>ricardo.mendez@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U018</td>
+    <td>Valeria Gómez</td>
+    <td>Estudiante</td>
+    <td>3ro C</td>
+    <td>valeria.gomez@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U019</td>
+    <td>Hugo Sánchez</td>
+    <td>Docente</td>
+    <td>Computación</td>
+    <td>hugo.sanchez@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U020</td>
+    <td>Elena Vargas</td>
+    <td>Estudiante</td>
+    <td>2do C</td>
+    <td>elena.vargas@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U021</td>
+    <td>Roberto Aguilar</td>
+    <td>Docente</td>
+    <td>Educación Física</td>
+    <td>roberto.aguilar@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U022</td>
+    <td>Camila Ortiz</td>
+    <td>Estudiante</td>
+    <td>1ro C</td>
+    <td>camila.ortiz@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U023</td>
+    <td>Diego Herrera</td>
+    <td>Estudiante</td>
+    <td>4to C</td>
+    <td>diego.herrera@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U024</td>
+    <td>Silvia Castro</td>
+    <td>Docente</td>
+    <td>Arte</td>
+    <td>silvia.castro@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+<tr>
+    <td>U025</td>
+    <td>Javier Mendoza</td>
+    <td>Estudiante</td>
+    <td>5to C</td>
+    <td>javier.mendoza@gmail.com</td>
+    <td>Activo</td>
+    <td class="acciones">
+        <button class="editar"><span class="material-symbols-outlined">edit</span></button>
+        <button class="eliminar"><span class="material-symbols-outlined">delete</span></button>
+    </td>
+</tr>
+
+
+
+            </tbody>
+
+        </table>
+
+    </main>
+
+</div>
+
 </body>
 </html>
