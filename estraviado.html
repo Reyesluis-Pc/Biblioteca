@@ -1,12 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros Extraviados</title>
     <link rel="stylesheet" href="css/extraviado.css">
-    <title>Document</title>
 </head>
 <body>
-    <h1>Libros extraviados</h1>
+
+<div class="contenedor">
+
+    <!-- Menú lateral -->
+    <aside class="sidebar">
+
+        <a href="inicio.html">
+            <img src="imagenes/casa-removebg-preview.png" alt="Inicio">
+        </a>
+
+        <a href="gestiondelibros.html">
+            <img src="imagenes/libro-removebg-preview.png" alt="Libros">
+        </a>
+
+        <a href="gestiondeusuarios.html">
+            <img src="imagenes/personas-removebg-preview.png" alt="Usuarios">
+        </a>
+
+        <a href="prestamolibros.html">
+            <img src="imagenes/prestamo-removebg-preview.png" alt="Préstamos">
+        </a>
+
+        <a href="devoluciones.html">
+            <img src="imagenes/devolucion-removebg-preview.png" alt="Devoluciones">
+        </a>
+
+        <a href="reportes.html">
+            <img src="imagenes/reporte-removebg-preview.png" alt="Reportes">
+        </a>
+
+             <a href="estraviado.html">
+            <img src="imagenes/libro-removebg-preview.png" alt="Extraviados">
+        </a>
+
+
+
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="contenido">
+
+        <h1>Libros Extraviados</h1>
+
+        <h3>Usuario</h3>
+        <input type="text" placeholder="Seleccione un usuario...">
+
+        <h3>Libro</h3>
+        <input type="text" placeholder="Seleccione un libro...">
+
+        <h3>Fecha</h3>
+        <input type="text" placeholder="15/06/2026">
+
+        <div class="reposicion">
+
+            <h3>Tipo de reposición</h3>
+
+            <label>
+                <input type="radio" name="reposicion">
+                Reponer con otro libro igual
+            </label>
+
+            <label>
+                <input type="radio" name="reposicion">
+                Pago del libro
+            </label>
+
+        </div>
+
+        <h3>Observaciones</h3>
+
+        <textarea placeholder="Escribe alguna observación (opcional)..."></textarea>
+
+        <button type="submit">GUARDAR REGISTRO</button>
+
+    </main>
+
+</div>
+
 </body>
 </html>
